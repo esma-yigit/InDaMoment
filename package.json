@@ -1,0 +1,8 @@
+{
+  "name": "InDaMoment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@personal:esma-yigit/InDaMoment.git",
+  "author": "Esma Mengi <esma@softcand.com>",
+  "license": "MIT"
+}
