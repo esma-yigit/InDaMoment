@@ -1,13 +1,15 @@
 import React from "react";
-import ReactDOM from 'react-dom'
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
+import { createRoot } from 'react-dom/client';
+
 
 import App from './App'
 import './styles/tailwind.css'
 
-ReactDOM.render(
-    <Router>
-        <App/>
-    </Router>,
-    document.getElementById('root')
-)
+const container = document.getElementById('app');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(
+    <BrowserRouter>
+        <App tab="home" />
+    </BrowserRouter>
+);

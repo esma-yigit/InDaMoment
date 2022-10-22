@@ -1,11 +1,15 @@
 import React from "react";
+import {Routes,Route} from "react-router-dom";
+import Login from '../src/components/Login'
+import Home from '../src/containers/Home'
 
 
 const App=()=>{
     return(
-        <div>
-            <h1 className='text-3xl text-red-300'>App</h1>
-        </div>
+      <Routes>
+          <Route path='/login' element={<Login/>} />
+          <Route path='/' element={<Home/>}/>
+      </Routes>
     )
 }
 export default App;

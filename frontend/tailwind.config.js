@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.js.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -84,6 +84,9 @@ module.exports = {
       'zoom-in': 'zoom-in',
       pointer: 'pointer',
     },
+    fontFamily:{
+      btn: "'Red Hat Text', sans-serif"
+    }
   },
   variants: {
     // backgroundColor: ['active'],
